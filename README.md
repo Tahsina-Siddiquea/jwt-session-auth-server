@@ -1,45 +1,39 @@
-# Secure Authentication System (SQL Injection Detection Lab)
+# JWT Session Authentication Server (Authentication Security Engineering Lab)
 
-## Overview
+## Project Introduction
 
-The Secure Authentication System is a defensive cybersecurity project designed to demonstrate secure login implementation and real-time detection of malicious authentication attempts.
+The JWT Session Authentication Server is a defensive cybersecurity project that explores how modern login mechanisms can be designed to resist database-driven attacks.
 
-This project simulates how modern applications protect user credentials by combining:
+This project demonstrates the transition from insecure authentication logic to a protected implementation using secure query handling, attack detection techniques, and structured logging.
 
-* Secure database interaction
-* Input validation and attack pattern detection
-* Logging of suspicious behavior
-* Defensive software engineering practices
+It acts as a controlled simulation environment where authentication vulnerabilities can be studied and mitigated through practical engineering solutions.
 
-The system contrasts vulnerable and secure authentication logic to highlight how improper query handling can lead to serious security risks such as SQL Injection.
+The system highlights how improper input handling can lead to unauthorized access and how secure coding practices can effectively neutralize such risks.
 
-It represents a practical implementation of authentication hardening concepts used in real-world secure software systems.
+## Key Functional Highlights
 
-
-## Key Features
-
-* Secure user authentication using parameterized SQL queries
-* Automatic local database setup using SQLite
-* Real-time detection of suspicious login input patterns
-* Logging of potential attack attempts for security analysis
-* Demonstration of both vulnerable and secure login flows
-* Command-line interactive authentication interface
-* Lightweight and cross-platform implementation
+* Robust credential verification mechanism backed by structured database storage
+* Implementation of secure query handling techniques to prevent manipulation of authentication logic
+* Integrated detection layer that identifies potentially malicious login inputs
+* Automatic logging of abnormal authentication attempts for monitoring and analysis
+* Controlled comparison between insecure and hardened authentication workflows
+* Lightweight database initialization and user record management
+* Command-line driven interaction model enabling safe security testing scenarios
+* Demonstration of defensive programming principles applied to identity verification systems
+* Practical simulation of real-world authentication attack surfaces and mitigation strategies
+* Modular design allowing easy extension into full secure web authentication frameworks
 
 
-## Security Concepts Demonstrated
+## Core Security Capabilities
 
-This project applies multiple defensive cybersecurity principles:
-
-* SQL Injection attack detection heuristics
-* Secure query execution using prepared statements
-* Secure credential validation workflow
-* Security logging and incident tracking
-* Input sanitization and validation mindset
-* Comparison of secure vs insecure authentication design
-
-These techniques simulate authentication protection mechanisms commonly deployed in secure enterprise systems.
-
+* Secure user authentication using database-backed credential validation
+* Detection of suspicious input patterns associated with injection attempts
+* Implementation of parameterized SQL queries to prevent query manipulation
+* Real-time logging of abnormal authentication behaviour
+* Automatic database initialization and controlled user storage
+* Comparison between vulnerable and secure authentication workflows
+* Lightweight command-line interaction for controlled testing
+* Demonstration of defensive software architecture in authentication systems
 
 ## How the System Works
 
@@ -57,7 +51,7 @@ This workflow helps illustrate both attack methodology and defensive mitigation 
 
 ## Project Structure
 ```
-secure-auth-system/
+jwt-session-auth-server/
 │
 ├── app_secure.py        → Secure login implementation
 ├── app_vulnerable.py    → Demonstration of insecure authentication
@@ -96,42 +90,56 @@ Try different login inputs to observe:
 
 ## Performance Characteristics
 
-* Minimal resource usage
 * Fast local database operations
-* Efficient detection logic
-* Suitable for educational lab environments
+* Minimal system resource consumption
+* Efficient authentication query execution
+* Lightweight detection overhead
+* Suitable for educational penetration testing simulations
+
+## Security Significance
+
+This project demonstrates applied defensive engineering skills in:
+
+* Secure authentication design
+* Database protection methodology
+* Input validation strategies
+* Attack surface reduction
+* Logging and monitoring integration
+* Secure software development mindset
+
+It reflects real challenges faced in backend security engineering and identity management systems.
 
 
-## Security & Ethical Use
+## Educational Outcomes
 
-This project is intended strictly for:
+Through this implementation, the following competencies are developed:
 
-* Cybersecurity education
-* Secure coding practice
-* Authentication system research
-* Defensive software engineering learning
+* Understanding authentication vulnerabilities
+* Designing secure database interaction layers
+* Implementing detection-based defensive controls
+* Developing structured cybersecurity lab environments
+* Translating theoretical security concepts into working systems
+* Building research-ready cybersecurity demonstration tools
 
-It must not be used to conduct unauthorized intrusion or malicious testing against real systems.
 
+## Intended Use
 
-## Learning Objectives
+This system is developed strictly for:
 
-Through this project, the following competencies are demonstrated:
+* Cybersecurity learning
+* Secure coding experimentation
+* Vulnerability research
+* Academic security demonstrations
 
-* Secure authentication workflow design
-* Practical SQL Injection risk mitigation
-* Security logging implementation
-* Defensive programming mindset
-* Database security fundamentals
-* Real-world secure software architecture awareness
+It must only be executed in controlled environments.
 
 
 ## Author
 
-Developed as part of a hands-on cybersecurity project series focused on practical defensive engineering and secure system design.
+Developed as part of a practical cybersecurity engineering initiative focused on authentication security and defensive system architecture.
 
 
 ## License
 
-This project is provided for educational and research purposes.
-Use responsibly and only in controlled or authorized environments.
+This project is released for educational and research purposes.
+Users are responsible for ethical usage and authorized testing only.
